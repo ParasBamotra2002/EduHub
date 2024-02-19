@@ -1,0 +1,671 @@
+
+body{
+width: 100vw;
+height: 100vh;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow-x: hidden;
+
+/* overflow-x: hidden; */
+}
+html{
+    font-size: 62.5%;
+    /* 1rem=10px */
+}
+* p{
+    margin: 0;
+    color: grey;
+    
+    /* padding-bottom: 0.9rem; */
+}
+:root{
+    --nav_menu_color:black;
+    --nav_menu_color_hover:rgb(39, 39, 242);
+    --para_color:white;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* gap: 60rem; */
+    
+    
+}
+.main_logo img{
+    width: 23rem;
+    padding: 1rem 2rem 1rem 4rem;
+}
+.nav_menu_items{
+    padding: 1rem 4rem 1rem 2rem;
+}
+.nav_menu_items ul{
+    display: flex;
+    justify-content:space-between ;
+    padding: 0;
+    /* flex-basis: 30%; */
+    gap: 10.2rem;
+
+}
+.nav_menu_items ul li {
+   list-style: none;
+   padding: 1rem;
+    & a{
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--nav_menu_color);
+        letter-spacing: 0.2rem;
+        position: relative;
+        /* padding: 2rem 4rem; */
+    }
+
+}
+
+.nav_menu_items ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    border-bottom: 1.5px solid var(--nav_menu_color_hover);
+    width: 0%;
+    transition:  all 0.2s linear;
+    -webkit-transition:  all 0.2s linear;
+    -moz-transition:  all 0.2s linear;
+    -ms-transition:  all 0.2s linear;
+    -o-transition:  all 0.2s linear;
+}
+  .nav_menu_items ul li a:hover:after{
+  
+    width: 100%;
+    cursor: pointer;
+   
+    
+}  
+.nav_menu_items ul li a:hover{
+    color: var(--nav_menu_color_hover);
+}
+
+/* main */
+.main_content{
+background: #F6F4FB;
+background: linear-gradient(225deg, #F6F4FB, #0103FF);
+border-bottom: 2px solid white;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15rem;
+    /* gap: 10rem; */
+    position: relative;
+}
+.main_content section{
+    padding-left: 2rem;
+}
+.main_content section p:nth-child(1){
+    /* max-width:50rem; */
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.6rem;
+    color: var(--para_color);
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    
+}
+.main_content section p:nth-child(2){
+    font-size: 5.8rem;
+    font-weight: 800;
+    color:rgb(9, 17, 84);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+      
+}
+.main_content section p:nth-child(3){
+    letter-spacing: 0.5rem;
+    word-spacing: 0.2rem;
+    color: var(--para_color);
+    font-size: 2.7rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+.main_image_logo img{
+    padding-right: 2rem;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+
+.main_link{
+    width: 20rem;
+    border-radius: 10rem;
+    background-color: rgb(11, 176, 246);
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    padding: 1.2rem;
+    text-align: center;
+   
+}
+.main_link a{
+    font-size: 3rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--para_color);
+}
+.custom-shape-divider-bottom-1707900031 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+ 
+}
+
+.custom-shape-divider-bottom-1707900031 svg {
+    position: relative;
+    display: block;
+    width: calc(206% + 1.3px);
+    height: 160px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1707900031 .shape-fill {
+    fill: #FFFFFF;
+    
+}
+ 
+/* -------------------------About section------------------------ */
+.about{
+    width: 100vw;
+   & p{
+   
+    font-size: 2.8rem;
+    padding-left: 2rem;
+}
+ & h2{
+    font-size: 3.4rem;
+    padding-left: 2rem;
+}
+}
+ 
+.threediv{
+    display: flex;
+    margin-top: 5rem ;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+.threediv p{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3rem;
+}
+.aboutDivone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-basis: 30%;
+
+    & p{
+    color: rgb(119, 122, 125);
+    text-align: center;
+    font-weight: 400;
+}
+   & h3{
+    font-size: 2.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+& img{
+    background-color: rgba(196, 226, 245, 0.85);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+}
+.aboutDivone img:hover{
+    transform: rotate(360deg);
+    /**Createdwithhttps:;
+    //www.css-gradient.com*Gradientlink:;
+    https:;
+    //www.css-gradient.com/?c1=4608ff&c2=4fc1cc&gt=l&gd=dcr*/background: #4608FF;
+    background: linear-gradient(270deg, #4608FF, #4FC1CC);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+/* --------------------My Courses----------------- */
+ .myCourses{
+    width: 100vw;
+    margin-bottom: 15rem;
+} 
+.coursesList{
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5rem;
+    place-items: center;
+}
+.list1,.list2,.list3,.list4,.list5,.list6{
+    font-size: 3.7rem;
+    /* position: relative; */
+    padding: 2.4rem;
+    background-color: #ededf6;
+    /* margin-left: 8rem; */
+    
+    /* margin-bottom: 1rem; */
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.list1{
+    color: orange;
+    
+}
+.list2{
+    color: brown;
+}
+.list3{
+    color: rgb(97, 135, 2);
+}
+.list5{
+    color: blueviolet;
+}
+.list6{
+    color: rgb(101, 67, 22);
+}
+.myCourses-top--heading h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.3rem;
+    font-weight: 600;
+    /* padding: 1rem; */
+    margin: 1rem;
+    margin-top: 4rem;
+}
+.myCourses-top--heading p{
+    color: grey;
+    font-size: 2.5rem;
+    padding: 1rem;
+    line-height: 2.1rem;
+    word-spacing: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    
+    
+}
+.coursesListcontent p{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.coursesListcontent h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.coursesListcontent{
+    padding: 2rem;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+* .coursesListcontent:hover{
+    box-shadow: 0px 7px 19px 6px rgba(168, 168, 168, 1);
+    -webkit-box-shadow: 0px 7px 19px 6px rgba(168, 168, 168, 1);
+    -moz-box-shadow: 0px 7px 19px 6px rgba(168, 168, 168, 1);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/* -----------------footer------------------ */
+.footer1{
+    width: 60vw;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-bottom: 5rem;
+    
+    /* position: absolute; */
+    
+    z-index: 1;
+    & p{
+        font-size: 2.3rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.3rem;
+        padding-bottom: 3rem;
+       
+    }
+    &  h1{
+        font-size: 3.4rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        margin-top: 0;
+      
+    }
+    &  button{
+        padding: 1rem;
+        background-color: #0103FF;
+        border: 1px solid #0103FF;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        
+}
+}
+.footer1divheading{
+    padding: 2rem;
+    
+    
+}
+.footer1divimg{
+    
+    
+    background-color: #ffffff;
+}
+.footer1divimg img{
+    width: 20vw;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+
+/* -------------------footerLinks------------------ */
+footer{
+    background-color: rgba(0, 0, 0, 0.92);
+}
+.flinks{
+   
+    &  ul{
+        padding:0;
+    }
+    & h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    }
+}
+
+.flinks ul li{
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+
+    & a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        
+}
+
+}
+.flinks li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(95, 108, 228);
+}
+.flinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    margin-bottom: 6rem;
+    width: 50rem;
+    margin: auto;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+.socialLinks{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    & .fa-brands{
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        transition: all 0.3s linear;
+        
+    }
+}
+.socialLinks .fa-brands:hover{
+    cursor: pointer;
+    color: rgb(95, 108, 228);
+}
+footer h4{
+    margin-bottom: 0;
+}
+/* ---------media queries---------- */
+@media (width <= 1400px){
+    html{
+        font-size: 52.5%;
+    }
+    /* ---------about------- */
+    .about p, h2{
+        text-align: center;
+        padding-left: 0;
+       
+    }
+    /* ----------myCourses--------- */
+    .myCourses-top--heading p{
+        text-align: center;
+    }
+}
+@media (width <= 1200px){
+    html{
+        font-size: 46.5%;
+    }
+    .main_logo img{
+        width: 18.5rem;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    .nav_menu_items{
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    .nav_menu_items ul{
+       
+        gap: 8.2rem;
+    }
+    /* ---------main--------- */
+    .main_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & section{
+            padding-left: 0;
+        }
+    }
+    
+    .custom-shape-divider-bottom-1707900031 svg {
+        
+        height: 120px;
+        
+    }
+    .main_content section p{
+        text-align: center;
+    }
+    .main_link{
+        margin: 0 auto;
+    }
+    /* -----myCourses----- */
+    .coursesListcontent p{
+        font-size: 2rem;
+    }
+    /* -------footerHeading-------- */
+    .footer1 p{
+        font-size: 1.8rem;
+        
+    }
+    .footer1 h1{
+        font-size: 2.4rem;
+    }
+}
+    
+@media (width <= 994px){
+    html{
+        font-size: 46.5%;
+    }
+    .main_logo img{
+        width: 15.5rem;
+        padding: 1rem 2rem 1rem 1rem;
+    }
+    .nav_menu_items{
+        padding: 1rem 1rem 1rem 2rem;
+    }
+    .nav_menu_items ul{
+      
+      
+        gap: 6.2rem;
+    
+    }
+    /* -----myCourse---- */
+    .coursesList{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    }
+   
+}
+@media (width <= 768px){
+   
+    .nav_menu_items {
+        padding: 1rem 1rem 1rem 2rem;
+        & ul{
+            gap: 4.2rem;
+        }
+    
+    
+    }
+     /* ------footerheading----- */
+     .footer1divheading p{
+        padding-bottom: 1.5rem;
+        text-align: center;
+    }
+    .footer1divheading h1{
+        text-align: center;
+    }
+    .footer1{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .footer1divheading div:nth-child(3){
+        text-align: center;
+    }
+    .footer1divimg img{
+        width: 25rem;
+    }
+}
+
+@media (width <= 576px){
+    html{
+        font-size: 40.5%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container{
+        display: flex;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+   
+    }
+
+    .nav_menu_items {
+        padding: 1rem 1rem 1rem 2rem;
+        & ul{
+            gap: 2.2rem;
+        }
+        /* -----myCourses---- */
+        .coursesListcontent p{
+            font-size: 1.7rem;
+        }
+    
+    }
+    /* -----main----- */
+    .custom-shape-divider-bottom-1707900031 svg {
+        
+        height: 100px;
+        
+    }
+    .main_image_logo img{
+        width: 65vw;
+    }
+     /* ---------about------- */
+    .aboutDivone img{
+        width: 20vw;
+    }
+    .threediv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.4rem;
+        flex-basis: 30%;
+    }
+    .aboutDivone{
+        padding: 1.2rem;
+    }
+    /* -----------footerHeading--------- */
+   
+} 
+@media (width<=360px){
+    .flinks{
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
